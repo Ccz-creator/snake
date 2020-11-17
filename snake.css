@@ -1,0 +1,80 @@
+.content{
+    width: 640px;
+    height: 640px;
+    margin: 30px auto;
+    position: relative;
+    /* background-color: red; */
+}
+
+.btn{
+    z-index: 1;
+    width: 100%;
+    height: 100%;   
+    background-color:rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn button{
+    cursor: pointer;
+    left: 50%;
+    top: 50%;
+    background: none;
+    position: absolute;
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+}
+
+.startBtn button{
+    width: 200px;
+    height: 150px;
+    margin-left: -100px;
+    margin-top: -75px;
+    /* background-color: red; */
+    background-image: url('./start.png');
+}
+
+.pauseBtn{
+    display: none;
+}
+
+.pauseBtn button{
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    background-image: url('./pause.png');
+
+}
+
+#snakeWrap{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background: pink;
+    border: 20px solid blue;
+}
+
+.snakeHead{
+   position: absolute;
+   background-image: url('./head.png');
+   background-size: cover;
+   width: 20px;
+   height: 20px;
+  }
+.snakeBody{
+   position: absolute;
+   background-color: #9CCC65;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+  }
+.food{
+   position: absolute;
+   background: url('./food.png') no-repeat;
+   background-size: 100% 100%;
+   width: 20px;
+   height: 20px;
+  }
